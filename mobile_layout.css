@@ -1,0 +1,63 @@
+/* ===============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+@media only screen and (max-width: 480px) {
+
+    nav.mainNav ul
+    {   
+        display: none;
+
+    }
+	
+	a#navicon:hover+ul, nav.mainNav ul:hover {
+		display: block;
+	}
+
+    article {
+        width: 100%;
+        float: none;
+    }
+
+    aside {
+        width: 100;
+        float: none;
+    }
+
+    body {
+        background-color: blanchedalmond;
+    }
+
+}
+
+
+/* ================================
+Tablet Styles: 481px to 640px
+================================
+*/
+@media only screen and (min-width: 481px) and (max-width: 640px) { 
+
+    a#navicon {
+		display: none;
+	}
+
+    body {
+        border-style: dotted;
+        border-color: rgba(165, 42, 42, 0.733);
+    }
+
+
+}
+
+
+/* ================================
+Desktop Styles: 641px
+================================
+*/
+@media only screen and (min-width: 641px) { 
+
+    a#navicon {
+		display: none;
+	}
+
+}

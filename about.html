@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Midterm Website
+
+        Filename: about.html
+    -->
+    <title>About Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link href="blog_layout.css" rel="stylesheet" media="all"/>
+    <link href="blog_styles.css" rel="stylesheet" media="all"/>
+    <link href="mobile_layout.css" rel="stylesheet" media="screen"/>
+</head>
+
+<body>
+    <header>
+        <img src="about_header1.png" alt="Blogging for FUN: About" class="mainLogo"/>
+        <nav class="mainNav">
+            <a href="#" id="navicon"><img src="content-images_cduong10/navicon1.png" alt="" /></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="anime.html">Anime</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article id="aboutPg">
+        <!-- ids are unique for each element, class is to associate a group of elements together-->
+        <h1 class="topHeader">About</h1> <!--h1 elements will be part of the topHeader class-->
+
+        <h2 class="subHeader1">What's a blog?</h2> <!--h2 elements will be part of the subHeader1 class (the header after h1)-->
+        <img src="content-images_cduong10/blog-writing-coffee-drawing.jpg" alt="" id="coffeeBlog">
+        <p>
+            "A blog (a truncation of "weblog")[1] is a discussion or informational website 
+            published on the World Wide Web consisting of discrete, often informal diary-style 
+            text entries (posts). Posts are typically displayed in reverse chronological order, 
+            so that the most recent post appears first, at the top of the web page. Until 2009, 
+            blogs were usually the work of a single individual,[citation needed] occasionally 
+            of a small group, and often covered a single subject or topic. In the 2010s, 
+            "multi-author blogs" (MABs) emerged, featuring the writing of multiple authors 
+            and sometimes professionally edited. MABs from newspapers, other media outlets, 
+            universities, think tanks, advocacy groups, and similar institutions account for an 
+            increasing quantity of blog traffic. The rise of Twitter and other "microblogging" 
+            systems helps integrate MABs and single-author blogs into the news media. Blog can 
+            also be used as a verb, meaning to maintain or add content to a blog."
+            - Wikipedia
+        </p>
+        
+        <br />
+
+        <h2 class="subHeader1">About the Author</h2>
+        <figure id="cameraShy">
+            <img src="content-images_cduong10/camera-shy_personal_use_license.png" alt="">
+            <figcaption>I'm camera shy&ndash;this is me.</figcaption>
+        </figure>
+        <p>
+            I am currently a student pursuing higher education. In addition, I am taking available
+            opportunities available to gain more knowledge and keep learning. In my opinion, to keep 
+            moving forward, we always need to keep learning. I am interested in learning new technologies 
+            and coding practices.
+        </p>
+
+        <br />
+        <br />
+
+        <h2 class="subHeader1">Creative Outlet</h2>
+        <img src="content-images_cduong10/creative_word.jpg" alt="" id="creativeWord">
+        <p>
+            I created this website/blog for creativity. Although my usual temperament is analytical, 
+            I enjoy having a creative outlet. I am aiming to add different effects and images to make 
+            this engaging. The blog should attract readers so that they have a great time also. The 
+            content will be quirky, funny, and entertaining. 
+        </p>
+
+    </article>
+
+    <aside id="sideInfo">
+        <h4>Top Three Favorite Things To Do</h4>
+        <ol id="favThingsList">
+            <li>Sleeping</li>
+            <li>Napping</li>
+            <li>Keeping my eyes closed</li>
+        </ol>
+        <br>
+        <h4>NEWS!</h4>
+        <p>
+            I've finally graduated. So I can call myself an <i>engineer</i>. Here is a 
+            small project I worked on during school. Enjoy!
+        </p>
+
+        <video controls poster="content-images_cduong10/MotorImg.png">
+            <source src="SimpleMotorExperiment.mp4" type="video/mp4" />
+            <track kind="captions" label="My Captions"
+            src="cduong10_captions.vtt" default />
+        </video>
+        <p><em><b>Important note:</b> 
+            <br>
+            To play this video clip, your browser needs to support HTML5.</em></p>
+    </aside>
+</body>
+<footer>
+    Blogging for FUN (BFF) &#8226; &#169; March 2021
+</footer>
+</html>

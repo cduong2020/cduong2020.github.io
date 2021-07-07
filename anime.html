@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Midterm Website
+
+        Filename: about.html
+    -->
+    <title>Anime Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link href="blog_layout.css" rel="stylesheet" media="all"/>
+    <link href="blog_styles.css" rel="stylesheet" media="all"/>
+    <link href="mobile_layout.css" rel="stylesheet" media="screen"/>
+    <script src="final_formsubmit.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="anime_header.png" alt="Blogging for FUN: Anime" class="mainLogo" />
+        <nav class="mainNav">
+            <a href="#" id="navicon"><img src="content-images_cduong10/navicon1.png" alt="" /></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="anime.html">Anime</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--
+    Defining Page Sections
+• To mark the page header, use the header element.
+• To mark self-contained content, use the article element.
+• To mark a navigation list of hypertext links, use the nav element.
+• To mark a sidebar, use the aside element.
+• To mark the page footer, use the footer element.
+• To group general content, use the section element.
+-->
+<article id="animeInfo">
+    <h1 class="topHeader">Anime</h1>
+        <h2 class="subHeader1">What is anime?</h2> 
+        <p>
+            <blockquote><q>Anime is hand-drawn and computer animation originating from Japan. 
+                In Japan and in Japanese, anime (a term derived from the English word animation), 
+                describes all animated works, regardless of style or origin. Outside of Japan and 
+                in English, anime is colloquial for Japanese animation and refers specifically to 
+                animation produced in Japan.[1] Animation produced outside of Japan with similar 
+                style to Japanese animation is referred to as anime-influenced animation. </q>
+                – Wikipedia
+                <br />
+                <br />
+                <q>Anime is a diverse medium with distinctive production methods that have adapted in 
+                response to emergent technologies. It combines graphic art, characterization, cinematography, 
+                and other forms of imaginative and individualistic techniques. Compared to Western animation, 
+                anime production generally focuses less on movement, and more on the detail of settings and 
+                use of "camera effects", such as panning, zooming, and angle shots. Diverse art styles are 
+                used, and character proportions and features can be quite varied, with a common characteristic 
+                feature being large and emotive eyes.</q> – Wikipedia 
+            </blockquote>
+        </p>
+        
+        
+        <img src="content-images_cduong10/comic-girls.jpg" alt="" id="animeImg">
+        <div>
+        <h3>Watch the trailer from <i>BOFURI: I Don't Want to Get Hurt so I'll Max Out My Defense</i> anime</h3>
+                <iframe width="450" height="350" src="https://www.youtube.com/embed/cAHIKRTPX2A" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+</article>
+<aside id="animeList">
+    <h4>Recommended Animes</h4>
+    <ul>
+        <li><a href="https://myanimelist.net/anime/35756/Comic_Girls">Comic Girls</a></li>
+        <li><a href="https://myanimelist.net/anime/35249/Uma_Musume__Pretty_Derby_TV">Uma Musume: Pretty Derby</a></li>
+        <li><a href="https://myanimelist.net/anime/38790/Itai_no_wa_Iya_nano_de_Bougyoryoku_ni_Kyokufuri_Shitai_to_Omoimasu">BOFURI</a></li>
+        <li><a href="https://myanimelist.net/anime/40586/Slime_Taoshite_300-nen_Shiranai_Uchi_ni_Level_Max_ni_Nattemashita">I've Been Killing Slimes for 300 Years and Maxed Out My Level</a></li>
+    </ul>
+
+    <input type="checkbox" id="tableShadow" />
+    <label for="tableShadow"><em>Check the box to stop the table shadow transitions.</em></label>
+    <table class="rankTable">
+        <caption>My Anime Ranking Table</caption>
+        <colgroup>
+            <col id="rankCol" />
+            <col class="topCols" span="3" />
+        </colgroup>
+        <!--Have 4 table rows-->
+        <thead>
+            <th>Rank Number</th>
+            <th>Anime Name</th>
+            <th>Release Date</th>
+            <th>Status</th>
+        </thead>
+        <tfoot>
+            <tr>
+            <td colspan="4">More to be added. Anime is life :)</td>
+            </tr>
+         </tfoot>
+        <tbody>
+            <tr>
+                <th>No. 1</th>
+                <td>BOFURI</td>
+                <td>Winter 2020</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <th>No. 2</th>
+                <td>Comic Girls</td>
+                <td>Spring 2018</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <th>No. 3</th>
+                <td>I've Been Killing Slimes for 300 Years and Maxed Out My Level</td>
+                <td>Spring 2021</td>
+                <td>Ongoing</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <form id="animeSurvey" action="http://www.example.com/anime/survey" method="post">
+        <fieldset id="animeInfromation">
+            <legend>What Anime Have You Watched?</legend>
+            <div class="formRow">
+                <label for="name">Anime Name*</label>
+                <input name="animeName" id="name" type="text" required minlength="6"/>
+            </div>
+            <div class="formRow">
+                <label for="date">Release Date</label>
+                <input name="dateReleased" id="date" type="text" placeholder="Summer 2020" required pattern="^^[a-zA-Z]+\s{1}[0-9]{4}$"/>
+            </div>
+            
+            <input name="statusRn" id="status" value="complete" type="checkbox" required/>
+            <label for="status">Status (completed)</label>
+
+        </fieldset>
+        <fieldset id="rating">
+            <legend>Rate the Anime</legend>
+            <div class="formRow">
+            <label for="genre">What genre is the anmie?</label>
+            <select name="typesGenre" id="genre">
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="comedy">Comedy</option>
+                <option value="isekai">Isekai</option>
+                <option value="music">Music</option>
+                <option value="sports">Sports</option>
+                <option value="magic">Magic</option>
+                <option value="other">Other</option>
+            </select>
+            </div>
+
+            <div class="formRow">
+            <label>Did you enjoy the anime?</label>
+            <fieldset class="rateGroup">
+                <label for="rbLike">Like</label>
+                <input name="opinion" id="rbLike" value="like" type="radio" />
+                <label for="rbDislike">Dislike</label>
+                <input name="opinion" id="rbDislike" value="dislike" type="radio" />
+            </fieldset>
+            </div>
+
+            <label for="rewatch">Watch again?</label>
+            <input name="watch" id="rewatch" value="yes" type="checkbox" required/>
+
+        </fieldset>
+
+        <div id="buttons">
+            <input type="submit" value="Submit Review" />
+            <input type="reset" value="Cancel" />
+        </div>
+
+    </form>
+</aside>
+</body>
+<footer>
+    Blogging for FUN (BFF) &#8226; &#169; March 2021
+</footer>
+</html>
