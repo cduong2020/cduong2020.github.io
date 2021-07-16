@@ -27,8 +27,6 @@ Mobile Styles: 0px to 480px
     body {
         background-color: blanchedalmond;
         width: 100vw;
-        height: 100vh;
-        max-width: 100%;
     }
 
 }
@@ -48,8 +46,6 @@ Tablet Styles: 481px to 640px
         border-style: dotted;
         border-color: rgba(165, 42, 42, 0.733);
         width: 100vw;
-        height: 100vh;
-        max-width: 100%;
     }
 
 
